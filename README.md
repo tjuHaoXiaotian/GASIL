@@ -63,7 +63,7 @@ global optimal: the quay with a green triangle
 - **m5v5_c_far**  
 ![image](https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/gif/m5v5.gif)
 
-    **curve of the win rate as the training progresses**
+    **curve of the win rate as the training progresses**   
 ![image](https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/img/win_rate.png)
 
 ## Have a try
