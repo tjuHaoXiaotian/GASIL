@@ -14,11 +14,15 @@ This is the code for implementing the GASIL algorithm presented in the paper: In
 Cooperative predator-prey is a more difficult version of the ’Predator-prey’ task used in MADDPG (Lowe et al. 2017). There are N slower cooperating agents (predators) must cooperatively chase one of the M faster prey in a randomly generated environment. Agents observe the relative positions of all predators and prey and the velocities of the prey only. Actions are accelerations in four directions (up, down, left and right). Each time the cooperative agents collide with a prey simultaneously, the agents will be rewarded by some reward based on the prey they captured. Different prey (e.g., Lion, Wildebeest
 and Deer) has different values and different risks in the meantime. This means there are different penalties for miss-coordination on different targets. we assume that the predator can hold a prey for some game steps `t` before the other partners’ arrival.
 
-In our experiments, we set N to 2, M to 3 and `t` to 8. In the figure above, 2 predators are in red (translucent red represents the hands of predator) and 3 prey is in blue and purple. Among the three prey, the purple one has the highest value and penalty (if misscoordination). For the other two, the lighter blue one has the lowest value and risk).
+In our experiments, we set N to 2, M to 3 and `t` to 8. In the figure above, 2 predators are in red (translucent red represents the hands of predator) and 3 prey is in blue and purple. Among the three prey, the purple one has the highest value and penalty (if misscoordination). For the other two, the lighter blue one has the lowest value and risk). The controllers of the three prey are pre-trained DDPGs. 
 #### Results  
-
-<iframe width="560" height="315" src="https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/video/cooperative_predator_prey_ddpg.mp4" frameborder="0" allowfullscreen></iframe>
-
+ 
+- **DDPG vs pre-trained DDPG**    
+ ![image](https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/gif/cooperative_predator_prey_ddpg.gif)
+- **MADDPG vs pre-trained DDPG**   
+![image](https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/gif/cooperative_predator_prey_maddpg.gif)
+- **GASIL vs pre-trained DDPG**    
+![image](https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/gif/cooperative_predator_prey_IGASIL.gif)
 ---
 
 
