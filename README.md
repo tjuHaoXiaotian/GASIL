@@ -17,8 +17,7 @@ and Deer) has different values and different risks in the meantime. This means t
 In our experiments, we set N to 2, M to 3 and `t` to 8. In the figure above, 2 predators are in red (translucent red represents the hands of predator) and 3 prey is in blue and purple. Among the three prey, the purple one has the highest value and penalty (if misscoordination). For the other two, the lighter blue one has the lowest value and risk).
 #### Results  
 
-<video src="https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/video/cooperative_predator_prey_ddpg.mp4" controls="controls">
-</video>
+<iframe width="560" height="315" src="https://raw.githubusercontent.com/tjuHaoXiaotian/GASIL/master/files/video/cooperative_predator_prey_ddpg.mp4" frameborder="0" allowfullscreen></iframe>
 
 ---
 
